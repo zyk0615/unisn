@@ -1,0 +1,59 @@
+{
+  "name": "zykutil/unisn",
+  "description": "To generate customize and unique Serial Number.",
+  "keywords": [
+    "laravel",
+    "customize",
+    "unique",
+    "serial number"
+  ],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "ZYKUtil\\UniSn\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "YoKai",
+      "email": "yokaiz0615@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0.2",
+    "illuminate/support": "^9.0"
+  },
+  "require-dev": {
+    "illuminate/console": "^9.0",
+    "illuminate/log": "^9.0",
+    "mockery/mockery": "^1.4.4",
+    "phpunit/phpunit": "^9.5.10"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ZYKUtil\\Unisn\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "ZYKUtil\\UniSn\\UniSnServiceProvider"
+      ],
+      "aliases": {
+        "UniSn": "ZYKUtil\\UniSn\\UniSnFacade"
+      }
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
