@@ -38,11 +38,6 @@ class DateDataCount extends AbstractUniSn
         } else {
             $count++;
         }
-        return $prefix . str_pad(
-                $count,
-                $this->resolver->getArgs()['default']['pad_length'],
-                0,
-                STR_PAD_LEFT
-            );
+        return $this->checkDataCount($prefix , $count);
     }
 }
